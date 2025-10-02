@@ -25,7 +25,7 @@ jobs:
         run: docker build -t node_app .
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v6
+        uses: SonarSource/sonarqube-scan-action@5ffbad44543237d1b339a5ed57a774432e19f3e4
         with:
           args: >
             -Dsonar.qualitygate.wait=true
