@@ -8,7 +8,7 @@ describe("Teste do servidor Node.js", () => {
 
   test("Deve retornar Hello, Node.js rodando no VS Code 🚀", async () => {
     const response = await request(server).get("/");
-    expect(response.status).toBe(200);
+    expect(response.status).toBe(400);
     expect(response.text).toBe("Hello, Node.js rodando no VS Code 🚀");
   });
 });
